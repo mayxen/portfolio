@@ -3,10 +3,9 @@
 <h5>TODO</h5>
 
 <ul>
-<li>cambiar HTML</li>
 <li>añadir routas</li>
 <li>poner los proyectos</li>
-<li>modificar el config</li>
-<li>poner mis redes</li>
 <li>Seguir investigando</li>
+<li>hacer la pagina de proyectos</li>
+<li>hacer la pagina de proyecto</li>
 </ul>

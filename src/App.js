@@ -10,7 +10,6 @@ import GetInTouch from "./components/home/GetInTouch.jsx";
 
 import Home from "./components/home/Home";
 
-
 const App = () => {
     const titleRef = React.useRef();
 
@@ -19,8 +18,8 @@ const App = () => {
             {navBar.show && <Navbar ref={titleRef}/>}
             <Routes>
                 <Route path="/" exact element={<Home ref={titleRef}/>}/>
-                <Route path="/projects" exact element={<Home ref={titleRef}/>}/>
-                <Route path="/projects/:id" exact element={<Home ref={titleRef}/>}/>
+                {/*<Route path="/projects" exact element={<Home ref={titleRef}/>}/>*/}
+                {/*<Route path="/projects/:id" exact element={<Home ref={titleRef}/>}/>*/}
             </Routes>
             <Footer>
                 {getInTouch.show && (

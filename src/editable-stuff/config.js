@@ -17,7 +17,7 @@ const mainBody = {
         },
         {
             image: "fa-instagram",
-            url: "https://www.instagram.com/mayxenprogrammer/",
+            url: "https://www.instagram.com/mayxendev/",
         },
         {
             image: "fa-linkedin",
@@ -51,12 +51,12 @@ const leadership = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
     images: [
         {
-            img: require("../editable-stuff/hashirshoaeb.png"),
+            img: "https://media-exp1.licdn.com/dms/image/C5603AQFBAuwIWgYlCQ/profile-displayphoto-shrink_800_800/0/1659623360314?e=1666224000&v=beta&t=Dh_o2G0bZ9ZPPEe5RRyXGqS0ALJGGw25cwjXtAMyC2A",
             label: "First slide label",
             paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
         },
         {
-            img: require("../editable-stuff/hashirshoaeb.png"),
+            img: "https://media-exp1.licdn.com/dms/image/C5603AQFBAuwIWgYlCQ/profile-displayphoto-shrink_800_800/0/1659623360314?e=1666224000&v=beta&t=Dh_o2G0bZ9ZPPEe5RRyXGqS0ALJGGw25cwjXtAMyC2A",
             label: "Second slide label",
             paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum."
         },
@@ -97,7 +97,7 @@ const getInTouch = {
     heading: "Get In Touch",
     message:
         "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-    email: "hashirshoaeb@gmail.com",
+    email: "ivancurbelotrabajo@gmail.com",
 };
 
 const experiences = {
