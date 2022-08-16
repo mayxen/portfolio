@@ -1,14 +1,11 @@
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {
-    navBar,
-    getInTouch,
-} from "./editable-stuff/config.js";
+import { navBar, getInTouch, } from "./editable-stuff/config.js";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-
 import Home from "./components/home/Home";
+import Projects from "./components/Projects/Projects";
 
 const App = () => {
     const titleRef = React.useRef();
@@ -18,7 +15,7 @@ const App = () => {
             {navBar.show && <Navbar ref={titleRef}/>}
             <Routes>
                 <Route path="/" exact element={<Home ref={titleRef}/>}/>
-                {/*<Route path="/projects" exact element={<Home ref={titleRef}/>}/>*/}
+                <Route path="/projects" exact element={<Projects ref={titleRef}/>}/>
                 {/*<Route path="/projects/:id" exact element={<Home ref={titleRef}/>}/>*/}
             </Routes>
             <Footer>

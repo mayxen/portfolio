@@ -14,7 +14,6 @@ const ExperienceCard = ({data}) => {
                     <br/>
                     {data.date}
                 </p>
-
             </div>
         </Col>
     );

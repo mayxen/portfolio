@@ -28,11 +28,10 @@ const mainBody = {
 
 const about = {
     show: true,
-    heading: "Sobre mii",
+    heading: "Sobre mi",
     imageLink: "https://media-exp1.licdn.com/dms/image/C5603AQFBAuwIWgYlCQ/profile-displayphoto-shrink_800_800/0/1659623360314?e=1666224000&v=beta&t=Dh_o2G0bZ9ZPPEe5RRyXGqS0ALJGGw25cwjXtAMyC2A",
     imageSize: 375,
-    message:
-        "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
+    message: "AboutMessage",
     resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -84,4 +83,36 @@ const experiences = {
     ]
 }
 
-export {navBar, mainBody, about, skills, getInTouch, experiences};
+const projects = {
+    show: true,
+    heading: "Experiences",
+    data: [
+        {
+            role: 'Programador fullstack en Zec Telecom',
+            date: '2021 – Actualidad',
+        },
+        {
+            role: 'Programador fullstack en Artek',
+            date: '2019 - 2020',
+        },
+    ]
+}
+
+const resources = {
+    en: {
+        translation: {
+            "ResumeButton": "Resume",
+            "Sobre mi": "About me",
+            "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
+        }
+    },
+    es: {
+        translation: {
+            "ResumeButton": "Curriculum",
+            "Sobre mi": "Sobre mi",
+            "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
+        }
+    }
+};
+
+export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources};
