@@ -64,7 +64,7 @@ const getInTouch = {
     show: true,
     heading: "Ponte en contacto conmigo!",
     message:
-        "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviarme un email si crees que puedo engajar en tu plantilla! Saludos.",
+        "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo engajar en tu plantilla",
     email: "ivancurbelotrabajo@gmail.com",
 };
 
@@ -85,15 +85,19 @@ const experiences = {
 
 const projects = {
     show: true,
-    heading: "Experiences",
+    heading: "Projects",
     data: [
         {
-            role: 'Programador fullstack en Zec Telecom',
-            date: '2021 – Actualidad',
-        },
-        {
-            role: 'Programador fullstack en Artek',
-            date: '2019 - 2020',
+            id: 0,
+            name: "Example",
+            description: "Example description",
+            img:[
+                "example.jpg",
+                "example.jpg",
+                "example.jpg",
+                "example.jpg",
+                "example.jpg",
+            ]
         },
     ]
 }

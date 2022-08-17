@@ -1,22 +1,21 @@
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { navBar, getInTouch, } from "./editable-stuff/config.js";
+import {getInTouch,} from "./editable-stuff/config.js";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Home from "./components/home/Home";
 import Projects from "./components/Projects/Projects";
+import Project from "./components/Projects/Project";
 
 const App = () => {
     const titleRef = React.useRef();
 
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-            {navBar.show && <Navbar ref={titleRef}/>}
             <Routes>
                 <Route path="/" exact element={<Home ref={titleRef}/>}/>
                 <Route path="/projects" exact element={<Projects ref={titleRef}/>}/>
-                {/*<Route path="/projects/:id" exact element={<Home ref={titleRef}/>}/>*/}
+                <Route path="/project/:id" exact element={<Project ref={titleRef}/>}/>
             </Routes>
             <Footer>
                 {getInTouch.show && (

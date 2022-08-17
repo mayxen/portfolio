@@ -3,3 +3,18 @@
 @import "./index";
 @import "./stars";
 @import "./typography";
+
+.buttonMargin {
+  margin: 5px;
+}
+
+.projectsCard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+
+  .projectCard {
+    margin: 5px;
+  }
+}

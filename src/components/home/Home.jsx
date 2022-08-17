@@ -4,11 +4,13 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import MainBody from "./MainBody";
+import Navbar from "../Navbar";
 
 const home = React.forwardRef(
     ({gradient, title, message, icons}, ref) => {
         return (
             <>
+                <Navbar ref={ref}/>
                 <MainBody
                     gradient={mainBody.gradientColors}
                     title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}

@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {mainBody, about, skills} from "../editable-stuff/config.js";
 import {NavLink} from "./home/migration";
-import {Link} from "react-router-dom";
 
 const Navigation = React.forwardRef((props, ref) => {
     const [isTop, setIsTop] = useState(true);
@@ -38,15 +37,15 @@ const Navigation = React.forwardRef((props, ref) => {
             }`}
             expand="lg"
         >
-            <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#projects"}>
+            <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/"}>
                 {`<${mainBody.firstName} />`}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navbar-nav mr-auto">
                     {
-                        <NavLink className="nav-item lead">
-                            <Link to={process.env.PUBLIC_URL + "/projects"}>Projects</Link>
+                        <NavLink className="nav-item lead"  href ={process.env.PUBLIC_URL + "/projects"}>
+                            Projects
                         </NavLink>
                     }
                     {about.show && (
