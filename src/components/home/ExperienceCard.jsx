@@ -1,18 +1,18 @@
 import React from 'react';
-
+import {useTranslation} from 'react-i18next';
 import {
     Col,
 } from "react-bootstrap";
 
 const ExperienceCard = ({data}) => {
+    const {t} = useTranslation();
     return (
         <Col lg="6">
             <div className="pb-5 text-center">
-                <img className=" bg-white mb-3" src={data.companylogo} alt=""/>
                 <p className="lead">
-                    {data.role}
+                    {t(data.role)}
                     <br/>
-                    {data.date}
+                    {t(data.date)}
                 </p>
             </div>
         </Col>

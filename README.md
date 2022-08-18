@@ -4,9 +4,7 @@
 
 <ul>
 <li>poner los proyectos</li>
-<li>Seguir investigando</li>
-<li>hacer la pagina de proyectos</li>
-<li>hacer la pagina de proyecto</li>
-<li>poner bonito el header</li>
-<li>añadir las traducciones</li>
+<li>revisar pagina en ingles</li>
+<li>añadir el cambio de idioma</li>
+<li>mejorar las cards con etiquetas</li>
 </ul>

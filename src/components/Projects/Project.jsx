@@ -1,14 +1,17 @@
 import React from "react";
 import {projects} from "../../editable-stuff/config";
+import {useTranslation} from 'react-i18next';
 
 const project = React.forwardRef((props, ref) => {
-    const search = window.location.search;
-    const params = new URLSearchParams(search);
-    const id = params.get('id');
-    const data = projects.data.find(i => i.id == id);
+        const {t} = useTranslation();
+        const search = window.location.search;
+        const params = new URLSearchParams(search);
+        const id = params.get('id');
+        // eslint-disable-next-line
+        const data = projects.data.find(i => i.id == id);
         return (
             <>
-                <p>{data.name}</p>
+                <p>{t(data.name)}</p>
             </>
         );
     }

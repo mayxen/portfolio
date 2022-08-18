@@ -9,7 +9,7 @@ const mainBody = {
     firstName: "Iván",
     middleName: "",
     lastName: "Curbelo",
-    message: "Apasionado de la tecnología y los videojuegos",
+    message: "MainBodyMessage",
     icons: [
         {
             image: "fa-github",
@@ -62,9 +62,9 @@ const skills = {
 
 const getInTouch = {
     show: true,
-    heading: "Ponte en contacto conmigo!",
+    heading: "TouchHeader",
     message:
-        "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo engajar en tu plantilla",
+        "TouchMessage",
     email: "ivancurbelotrabajo@gmail.com",
 };
 
@@ -73,12 +73,12 @@ const experiences = {
     heading: "Experiences",
     data: [
         {
-            role: 'Programador fullstack en Zec Telecom',
-            date: '2021 – Actualidad',
+            role: 'role-Zec',
+            date: 'date-Zec',
         },
         {
-            role: 'Programador fullstack en Artek',
-            date: '2019 - 2020',
+            role: 'role-Artek',
+            date: 'date-Artek',
         },
     ]
 }
@@ -89,14 +89,14 @@ const projects = {
     data: [
         {
             id: 0,
-            name: "Example",
-            description: "Example description",
-            img:[
-                "example.jpg",
-                "example.jpg",
-                "example.jpg",
-                "example.jpg",
-                "example.jpg",
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
             ]
         },
     ]
@@ -107,21 +107,69 @@ const resources = {
         translation: {
             //HOME
             "ResumeButton": "Resume",
+
+            //EXPERIENCE CARD
+            "role-Zec": "FullStack programmer at Zec Telecom",
+            "role-Artek": "FullStack programmer at Artek",
+            "date-Zec": "2021 – Nowadays",
+            "date-Artek": "2019 - 2020",
+            "Experiences": "Experiences",
+
+            //GET IN TOUCH
+            "TouchHeader": "Contact me!",
+            "TouchMessage": "I am currently working but I do not rule out offers that may involve a challenge or a change for the better. Do not hesitate to send me an email if you think I can fit in your staff.",
+
+            //MAIN BODY
+            "More about me": "More about me",
+            "View recent projects": "View recent projects",
+            "MainBodyMessage": "Passionate about technology and videogames",
+
+            //SKILLS
+            "Lenguajes": "programming language",
+            "Framework/Software": "Framework/Software",
+
             //HEADER
-            "About" : "About",
+            "About": "About",
+            "Skills": "Skills",
+            "Projects": "Projects",
+
             //ABOUT
             "Sobre mi": "About me",
-            "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
+            "AboutMessage": "Passionate about programming, I love learning new things. I have learned video game development and multiple languages such as C#, C++ among others.",
         }
     },
     es: {
         translation: {
-            //HEADER
-            "About" : "About",
             //HOME
             "ResumeButton": "Curriculum",
+
+            //EXPERIENCE CARD
+            "role-Zec": "Programador FullStack en Zec Telecom",
+            "role-Artek": "Programador FullStack en Artek",
+            "date-Zec": "2021 – Actualidad",
+            "date-Artek": "2019 - 2020",
+            "Experiences": "Experiencia laboral",
+
+            //GET IN TOUCH
+            "TouchHeader": "Ponte en contacto conmigo!",
+            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo engajar en tu plantilla.",
+
+            //MAIN BODY
+            "More about me": "Sobre mí",
+            "View recent projects": "Ver proyectos",
+            "MainBodyMessage": "Apasionado de la tecnología y los videojuegos",
+
+            //SKILLS
+            "Lenguajes": "Lenguajes de programación",
+            "Framework/Software": "Framework/Software",
+
+            //HEADER
+            "About": "Sobre mí",
+            "Skills": "Habilidades",
+            "Projects": "Proyectos",
+
             //ABOUT
-            "Sobre mi": "Sobre mi",
+            "Sobre mi": "Sobre mí",
             "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
         }
     }

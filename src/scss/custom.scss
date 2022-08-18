@@ -4,6 +4,9 @@
 @import "./stars";
 @import "./typography";
 
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 .buttonMargin {
   margin: 5px;
 }
@@ -14,7 +17,22 @@
   flex-wrap: wrap;
   cursor: pointer;
 
+  .card-title {
+    text-align: center;
+  }
+
   .projectCard {
     margin: 5px;
   }
 }
+
+.softMargin {
+  margin: 0px 5px !important;
+}
+
+.slick-arrow {
+  &:before {
+    color: black;
+  }
+}
+

@@ -3,8 +3,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {mainBody} from "../editable-stuff/config.js";
 import {NavLink} from "./home/migration";
+import {useTranslation} from 'react-i18next';
 
 const NavigationContent = ((props) => {
+    const {t} = useTranslation();
     return (
         <>
             <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/"}>
@@ -15,7 +17,7 @@ const NavigationContent = ((props) => {
                 <Nav className="navbar-nav mr-auto">
                     {
                         <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/projects"}>
-                            Projects
+                            {t('Projects')}
                         </NavLink>
                     }
                 </Nav>
