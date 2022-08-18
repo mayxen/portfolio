@@ -105,14 +105,22 @@ const projects = {
 const resources = {
     en: {
         translation: {
+            //HOME
             "ResumeButton": "Resume",
+            //HEADER
+            "About" : "About",
+            //ABOUT
             "Sobre mi": "About me",
             "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
         }
     },
     es: {
         translation: {
+            //HEADER
+            "About" : "About",
+            //HOME
             "ResumeButton": "Curriculum",
+            //ABOUT
             "Sobre mi": "Sobre mi",
             "AboutMessage": "Apasionado de la programación, me encanta aprender cosas nuevas. De forma autodidacta he aprendido el desarrollo de videojuegos y múltiples lenguajes como C#, C++ entre otros",
         }
