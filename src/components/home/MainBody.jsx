@@ -1,11 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import {Jumbotron} from "./migration";
 import {useTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
+import Arrows from "./Arrows";
 
 const MainBody = React.forwardRef(({gradient, title, message, icons}, ref) => {
+
+    useEffect(function () {
+        let arrow = document.querySelector('.arrow-example');
+
+        setInterval(() => {
+            arrow.classList.toggle('-hidden');
+        }, 1000);
+
+    }, []);
+
     const {t} = useTranslation();
     return (<Jumbotron
         fluid
@@ -40,6 +51,7 @@ const MainBody = React.forwardRef(({gradient, title, message, icons}, ref) => {
         <Link className="btn btn-outline-light btn-lg buttonMargin" to={"/projects"} aria-label="View recent projects">
             {t('View recent projects')}
         </Link>
+        <Arrows/>
     </Jumbotron>);
 });
 

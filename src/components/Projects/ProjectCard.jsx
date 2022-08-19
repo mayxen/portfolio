@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import {useTranslation} from 'react-i18next';
 import Slider from "react-slick";
+import Tags from "./Tags";
 
 const ProjectCard = ({data}) => {
     const settings = {
@@ -23,6 +24,7 @@ const ProjectCard = ({data}) => {
         <Col md={4} className={'projectCard'}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
                 <Card.Body>
+                    {data.tags && <Tags tagsData={data.tags}/>}
                     <div onClick={openProject}>
                         <Card.Title as="h5">{t(data.name) || <Skeleton/>} </Card.Title>
                         <Card.Text>{(!data.description) ? "" : t(data.description) ||

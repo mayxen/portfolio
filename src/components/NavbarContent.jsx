@@ -9,7 +9,7 @@ const NavigationContent = ((props) => {
     const {t} = useTranslation();
     return (
         <>
-            <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/"}>
+            <Navbar.Brand className="navbar-brand nav-item" href={process.env.PUBLIC_URL + "/"}>
                 {`<${mainBody.firstName} />`}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler"/>

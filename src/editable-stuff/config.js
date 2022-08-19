@@ -91,6 +91,7 @@ const projects = {
             id: 0,
             name: "Portfolio",
             description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            tags: ["React", "Web"],
             img: [
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
@@ -100,6 +101,13 @@ const projects = {
             ]
         },
     ]
+}
+
+const tags = {
+    React: '#c28585',
+    Web: '#99a3ea',
+    Laravel: '#df1ee3',
+    GameDev: '#4bb25a',
 }
 
 const resources = {
@@ -175,4 +183,4 @@ const resources = {
     }
 };
 
-export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources};
+export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources, tags};
