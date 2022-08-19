@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {mainBody} from "../editable-stuff/config.js";
-import {NavLink} from "./home/migration";
 import {useTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
 
@@ -17,7 +16,7 @@ const NavigationContent = ((props) => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="navbar-nav mr-auto">
                     {
-                        <Link className="nav-item lead" to={process.env.PUBLIC_URL + "/projects"}>
+                        <Link className="nav-item lead" to={"/projects"}>
                             {t('Projects')}
                         </Link>
                     }

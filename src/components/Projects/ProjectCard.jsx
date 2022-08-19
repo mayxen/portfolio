@@ -16,7 +16,7 @@ const ProjectCard = ({data}) => {
     const {t} = useTranslation();
 
     function openProject() {
-        document.location = "/project/data?id=" + data.id;
+        document.location = "/#/project/data?id=" + data.id;
     }
 
     return (

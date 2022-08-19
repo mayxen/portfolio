@@ -1,10 +1,12 @@
 import React from "react";
-import {about, experiences, mainBody, skills} from "../../editable-stuff/config";
+import {about, experiences, getInTouch, mainBody, skills} from "../../editable-stuff/config";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import MainBody from "./MainBody";
 import Navbar from "../Navbar";
+import GetInTouch from "./GetInTouch";
+import Footer from "../Footer";
 
 const home = React.forwardRef(
     ({gradient, title, message, icons}, ref) => {
@@ -37,6 +39,15 @@ const home = React.forwardRef(
                 {experiences.show && (
                     <Experience experiences={experiences}/>
                 )}
+                <Footer>
+                    {getInTouch.show && (
+                        <GetInTouch
+                            heading={getInTouch.heading}
+                            message={getInTouch.message}
+                            email={getInTouch.email}
+                        />
+                    )}
+                </Footer>
             </>
         );
     }

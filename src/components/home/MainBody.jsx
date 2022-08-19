@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import {Jumbotron} from "./migration";
 import {useTranslation} from 'react-i18next';
+import {Link} from "react-router-dom";
 
 const MainBody = React.forwardRef(({gradient, title, message, icons}, ref) => {
     const {t} = useTranslation();
@@ -36,22 +37,9 @@ const MainBody = React.forwardRef(({gradient, title, message, icons}, ref) => {
                 </a>))}
             </div>
         </Container>
-        <a
-            className="btn btn-outline-light btn-lg buttonMargin"
-            href="#aboutme"
-            role="button"
-            aria-label="Learn more about me"
-        >
-            {t('More about me')}
-        </a>
-        <a
-            className="btn btn-outline-light btn-lg buttonMargin"
-            href="/projects"
-            role="button"
-            aria-label="View recent projects"
-        >
+        <Link className="btn btn-outline-light btn-lg buttonMargin" to={"/projects"} aria-label="View recent projects">
             {t('View recent projects')}
-        </a>
+        </Link>
     </Jumbotron>);
 });
 
