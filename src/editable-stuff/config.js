@@ -160,7 +160,7 @@ const resources = {
 
             //GET IN TOUCH
             "TouchHeader": "Ponte en contacto conmigo!",
-            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo engajar en tu plantilla.",
+            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo encajar en tu plantilla.",
 
             //MAIN BODY
             "More about me": "Sobre mí",
