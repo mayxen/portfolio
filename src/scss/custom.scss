@@ -30,6 +30,14 @@
   margin: 0px 5px !important;
 }
 
+.project {
+  .slick-slide {
+    img {
+     margin: auto;
+    }
+  }
+}
+
 .slick-arrow {
   &:before {
     color: black;
@@ -56,5 +64,9 @@
     border-radius: 15px;
     padding: 4px;
   }
+}
+
+.backgroundBlue {
+  background-color: rgba(31, 101, 206, 0.81);
 }
 

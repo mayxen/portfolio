@@ -5,7 +5,7 @@ import NavbarContent from "./NavbarContent";
 const Navigation = ((props) => {
     return (
         <Navbar
-            className={`px-3 navbar-white`}
+            className={`px-3 backgroundBlue`}
             expand="lg"
         >
             <NavbarContent/>

@@ -91,6 +91,7 @@ const projects = {
             id: 0,
             name: "Portfolio",
             description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
             tags: ["React", "Web"],
             img: [
                 require("../assets/img/web.jpg"),
@@ -98,7 +99,96 @@ const projects = {
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
-            ]
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+        }, {
+            id: 0,
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+        }, {
+            id: 0,
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+        }, {
+            id: 0,
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+        }, {
+            id: 0,
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+        }, {
+            id: 0,
+            name: "Portfolio",
+            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
+            img: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
+            shortImg : [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
         },
     ]
 }

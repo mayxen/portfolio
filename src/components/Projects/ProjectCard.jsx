@@ -27,11 +27,11 @@ const ProjectCard = ({data}) => {
                     {data.tags && <Tags tagsData={data.tags}/>}
                     <div onClick={openProject}>
                         <Card.Title as="h5">{t(data.name) || <Skeleton/>} </Card.Title>
-                        <Card.Text>{(!data.description) ? "" : t(data.description) ||
+                        <Card.Text>{(!data.shortDescription) ? "" : t(data.shortDescription) ||
                             <Skeleton count={3}/>} </Card.Text>
                     </div>
                     <Slider {...settings}>
-                        {data.img.map((data, index) => (
+                        {data.shortImg.map((data, index) => (
                             <div key={index}>
                                 <img src={data} alt={data} onClick={openProject}/>
                             </div>
