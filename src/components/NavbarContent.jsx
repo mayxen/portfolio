@@ -9,20 +9,19 @@ const NavigationContent = ((props) => {
     const {t} = useTranslation();
     return (
         <>
-            <Navbar.Brand className="navbar-brand nav-item" href={process.env.PUBLIC_URL + "/"}>
-                {`<${mainBody.firstName} />`}
+            <Navbar.Brand className="navbar-brand nav-item">
+                <Link className="nav-item lead" to={process.env.PUBLIC_URL + "/"}>
+                    {`<${mainBody.firstName} />`}
+                </Link>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler"/>
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="navbar-nav mr-auto">
-                    {
-                        <Link className="nav-item lead" to={"/projects"}>
-                            {t('Projects')}
-                        </Link>
-                    }
-                </Nav>
-                {props.children}
-            </Navbar.Collapse>
+            <Nav className="navbar-nav mr-auto">
+                {
+                    <Link className="nav-item lead" to={"/projects"}>
+                        {t('Projects')}
+                    </Link>
+                }
+            </Nav>
+            {props.children}
         </>
     );
 });

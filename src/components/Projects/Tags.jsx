@@ -2,10 +2,6 @@ import React from "react";
 import {tags} from "../../editable-stuff/config";
 
 const Tags = ({tagsData}) => {
-    const getColor =  (tag) => {
-        console.log(tags[tag]);
-        return tags[tag];
-    }
 
     return (
         <div className="tags">
