@@ -30,9 +30,43 @@
   margin: 0px 5px !important;
 }
 
+.project {
+  .slick-slide {
+    img {
+     margin: auto;
+    }
+  }
+}
+
 .slick-arrow {
   &:before {
     color: black;
   }
+}
+
+.nav-item {
+  color: #fff !important;
+
+  &:hover {
+    color: #e8e8e8 !important;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .tag {
+    margin: 2px;
+    color: white;
+    font-style: italic;
+    font-size: 11px;
+    border-radius: 15px;
+    padding: 4px;
+  }
+}
+
+.backgroundBlue {
+  background-color: rgba(31, 101, 206, 0.81);
 }
 

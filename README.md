@@ -1,11 +1,15 @@
 <p>Bienvenido a mi porfolio!</p>
 
-<h5>TODO</h5>
-
+<h1>TODO</h1>
 <ul>
-<li>poner los proyectos</li>
-<li>revisar pagina en ingles</li>
-<li>añadir el cambio de idioma</li>
-<li>mejorar las cards con etiquetas</li>
-<li>Poner grado superior en el curriculum</li>
+    <li>Modo movil</li>
+</ul>
+
+<h1>Projects a subiiir</h1>
+<ul>
+    <li>Portfolio</li>
+    <li>Porfolio de una amiga</li>
+    <li>juego de la vaca</li>
+    <li>Movidas de excel</li>
+    <li>Juego de twitch</li>
 </ul>

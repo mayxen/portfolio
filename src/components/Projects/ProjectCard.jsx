@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import {useTranslation} from 'react-i18next';
 import Slider from "react-slick";
+import Tags from "./Tags";
 
 const ProjectCard = ({data}) => {
     const settings = {
@@ -16,20 +17,21 @@ const ProjectCard = ({data}) => {
     const {t} = useTranslation();
 
     function openProject() {
-        document.location = "/project/data?id=" + data.id;
+        document.location = "/#/project/data?id=" + data.id;
     }
 
     return (
         <Col md={4} className={'projectCard'}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
                 <Card.Body>
+                    {data.tags && <Tags tagsData={data.tags}/>}
                     <div onClick={openProject}>
                         <Card.Title as="h5">{t(data.name) || <Skeleton/>} </Card.Title>
-                        <Card.Text>{(!data.description) ? "" : t(data.description) ||
+                        <Card.Text>{(!data.shortDescription) ? "" : t(data.shortDescription) ||
                             <Skeleton count={3}/>} </Card.Text>
                     </div>
                     <Slider {...settings}>
-                        {data.img.map((data, index) => (
+                        {data.shortImg.map((data, index) => (
                             <div key={index}>
                                 <img src={data} alt={data} onClick={openProject}/>
                             </div>

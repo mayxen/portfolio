@@ -91,15 +91,28 @@ const projects = {
             id: 0,
             name: "Portfolio",
             description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
+            shortDescription: "Desarrollo del portfolio usando React (...)",
+            tags: ["React", "Web"],
             img: [
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
                 require("../assets/img/web.jpg"),
-            ]
+            ],
+            shortImg: [
+                require("../assets/img/web.jpg"),
+                require("../assets/img/web.jpg"),
+            ],
         },
     ]
+}
+
+const tags = {
+    React: '#c28585',
+    Web: '#99a3ea',
+    Laravel: '#df1ee3',
+    GameDev: '#4bb25a',
 }
 
 const resources = {
@@ -120,6 +133,7 @@ const resources = {
             "TouchMessage": "I am currently working but I do not rule out offers that may involve a challenge or a change for the better. Do not hesitate to send me an email if you think I can fit in your staff.",
 
             //MAIN BODY
+            "changeLang": "Cambiar a español",
             "More about me": "More about me",
             "View recent projects": "View recent projects",
             "MainBodyMessage": "Passionate about technology and videogames",
@@ -152,9 +166,10 @@ const resources = {
 
             //GET IN TOUCH
             "TouchHeader": "Ponte en contacto conmigo!",
-            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo engajar en tu plantilla.",
+            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo encajar en tu plantilla.",
 
             //MAIN BODY
+            "changeLang": "Switch to English",
             "More about me": "Sobre mí",
             "View recent projects": "Ver proyectos",
             "MainBodyMessage": "Apasionado de la tecnología y los videojuegos",
@@ -175,4 +190,4 @@ const resources = {
     }
 };
 
-export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources};
+export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources, tags};
