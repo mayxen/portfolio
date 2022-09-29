@@ -23,6 +23,9 @@
 
   .projectCard {
     margin: 5px;
+    @media only screen and (max-width: 630px) {
+      width: 80%;
+    }
   }
 }
 
@@ -31,9 +34,13 @@
 }
 
 .project {
+  @media only screen and (max-width: 630px) {
+    width: 80%;
+  }
+
   .slick-slide {
     img {
-     margin: auto;
+      margin: auto;
     }
   }
 }
