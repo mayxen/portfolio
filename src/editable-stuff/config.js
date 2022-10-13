@@ -89,20 +89,42 @@ const projects = {
     data: [
         {
             id: 0,
-            name: "Portfolio",
-            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
-            shortDescription: "Desarrollo del portfolio usando React (...)",
-            tags: ["React", "Web"],
+            name: "Twitch Game",
+            link: "",
+            description: "twitchgamedesc",
+            shortDescription: "twitchgamedescshort",
+            tags: ["GameDev", "Unity"],
             img: [
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
+                require("../assets/img/twitchGame/login.png"),
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+                require("../assets/img/twitchGame/manuplayeritem.png"),
+                require("../assets/img/twitchGame/menu.png"),
+                require("../assets/img/twitchGame/menuitem.png"),
             ],
             shortImg: [
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+            ],
+        },
+        {
+            id: 1,
+            name: "The elastivaca game",
+            link: "https://mayxen.itch.io/the-elastivaca-game",
+            description: "vacadesc",
+            shortDescription: "vacadescshort",
+            tags: ["GameDev", "Unity"],
+            img: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/panel.png"),
+                require("../assets/img/Moogame/menu.png"),
+                require("../assets/img/Moogame/game.png"),
+                require("../assets/img/Moogame/game1.png"),
+                require("../assets/img/Moogame/game2.png"),
+            ],
+            shortImg: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/game.png"),
             ],
         },
     ]
@@ -113,11 +135,22 @@ const tags = {
     Web: '#99a3ea',
     Laravel: '#df1ee3',
     GameDev: '#4bb25a',
+    Unity: '#c4ffe1',
+    UnrealEngine: '#3572ad',
 }
 
 const resources = {
     en: {
         translation: {
+            //PROJECTS
+            //VACA
+            "vacadesc": "Puzzle game where an elastic cow has to escape for her life, this game was developed by me and the assets were developed by a friend, all the information and the download is available in the link below, I warn that it has a lot of bugs but it was a fun experience.",
+            "vacadescshort": "Game develop by me for a gamejam (...)",
+            //TWITCHGAME
+            "twitchgamedesc": "Fighting game made in unity to be played through my twitch channel.  Players will see from my twitch channel the person who is the boss, which is the person who is seen with life and armor. In the game players have stats to do damage, have life when they defeat the boss and become boss plus a list of weapons they can equip to improve their attack or defense capabilities when they are the boss.  In order to participate in the game participants have to post a command in the chat and will be given random stats and as they play they can improve them.\n" +
+                "\n" +
+                "Translated with www.DeepL.com/Translator (free version)",
+            "twitchgamedescshort": "Game developed to play from my twitch channel, you register from the chat and you can already participate using commands",
             //HOME
             "ResumeButton": "Resume",
 
@@ -154,6 +187,20 @@ const resources = {
     },
     es: {
         translation: {
+            //PROJECTS
+            //VACA
+            "vacadesc": "Juego de puzzle donde una vaca elastica tiene que escapar por su vida, este juego fue desarrollado" +
+                " por mi y los assets los desarrolló un amigo, toda la información y la descarga está disponible en el link de abajo, advierto que " +
+                "tiene bastantes bugs pero fue una experiencia divertida",
+            "vacadescshort": "Juego desarrollado para una gamejam hecho por mi (...)",
+            //TWITCHGAME
+            "twitchgamedesc": "Juego de lucha realizado en unity para ser jugado através de mi canal de twitch." +
+                " Los jugadores verán desde mi canal de twitch a la persona que es el boss, que es la persona que se ve con vida y armadura. En el juego los jugadores tienen" +
+                " stats para hacer daño, tener vida cuando derrotan al boss y se convierten en boss además de una lista de armas que pueden equiparse para mejorar su ataque o " +
+                " sus capacidades de defensa cuando son el boss. " +
+                " Para poder participar los participantes tienen que poner un comando en el chat y se le darán unas estadisticas aleatorias y con forme juegen pueden mejorarlas",
+            "twitchgamedescshort": "Juego desarrollado para jugar desde mi canal de twitch (...)",
+
             //HOME
             "ResumeButton": "Curriculum",
 

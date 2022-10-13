@@ -15,7 +15,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  cursor: pointer;
+
+  .clickArea {
+    cursor: pointer;
+  }
 
   .card-title {
     text-align: center;
@@ -23,6 +26,13 @@
 
   .projectCard {
     margin: 5px;
+    @media only screen and (max-width: 630px) {
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -31,9 +41,14 @@
 }
 
 .project {
+  @media only screen and (max-width: 630px) {
+    width: 80%;
+  }
+
   .slick-slide {
     img {
-     margin: auto;
+      width: 100%;
+      margin: auto;
     }
   }
 }

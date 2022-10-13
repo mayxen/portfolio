@@ -46,6 +46,11 @@ const project = React.forwardRef((props, ref) => {
                             <Card.Text>{(!data.description) ? "" : t(data.description) ||
                                 <Skeleton count={3}/>} </Card.Text>
                         </div>
+                        {(data.link) &&
+                            <div className="m-3">
+                                <a target={"_blank"} href={t(data.link)}>Elastivaca Game!</a>
+                            </div>
+                        }
                     </div>
                 )
             }
