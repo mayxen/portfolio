@@ -89,20 +89,48 @@ const projects = {
     data: [
         {
             id: 0,
-            name: "Portfolio",
-            description: "Desarrollo del portfolio usando React y el pages de Github para mostrar los proyectos realizados por mi.",
-            shortDescription: "Desarrollo del portfolio usando React (...)",
-            tags: ["React", "Web"],
+            name: "Twitch Game",
+            link: "",
+            description: "Juego de lucha realizado en unity para ser jugado através de mi canal de twitch." +
+                " Los jugadores verán desde mi canal de twitch a la persona que es el boss, que es la persona que se ve con vida y armadura. En el juego los jugadores tienen" +
+                " stats para hacer daño, tener vida cuando derrotan al boss y se convierten en boss además de una lista de armas que pueden equiparse para mejorar su ataque o " +
+                " sus capacidades de defensa cuando son el boss. " +
+                " Para poder participar los participantes tienen que poner un comando en el chat y se le darán unas estadisticas aleatorias y con forme juegen pueden mejorarlas",
+            shortDescription: "Juego desarrollado para jugar desde mi canal de twitch, te registra desde el chat y ya puede participar utilizando los comandos",
+            tags: ["GameDev", "Unity"],
             img: [
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
+                require("../assets/img/twitchGame/login.png"),
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+                require("../assets/img/twitchGame/manuplayeritem.png"),
+                require("../assets/img/twitchGame/menu.png"),
+                require("../assets/img/twitchGame/menuitem.png"),
             ],
             shortImg: [
-                require("../assets/img/web.jpg"),
-                require("../assets/img/web.jpg"),
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+            ],
+        },
+        {
+            id: 1,
+            name: "The elastivaca game",
+            link: "https://mayxen.itch.io/the-elastivaca-game",
+            description: "Juego de puzzle donde una vaca elastica tiene que escapar por su vida, este juego fue desarrollado" +
+                " por mi y los assets los desarrolló un amigo, toda la información y la descarga está disponible en el link de abajo, advierto que " +
+                "tiene bastantes bugs pero fue una experiencia divertida",
+            shortDescription: "Juego desarrollado para una gamejam hecho por mi(...)",
+            tags: ["GameDev", "Unity"],
+            img: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/panel.png"),
+                require("../assets/img/Moogame/menu.png"),
+                require("../assets/img/Moogame/game.png"),
+                require("../assets/img/Moogame/game1.png"),
+                require("../assets/img/Moogame/game2.png"),
+            ],
+            shortImg: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/game.png"),
             ],
         },
     ]
@@ -113,6 +141,8 @@ const tags = {
     Web: '#99a3ea',
     Laravel: '#df1ee3',
     GameDev: '#4bb25a',
+    Unity: '#c4ffe1',
+    UnrealEngine: '#3572ad',
 }
 
 const resources = {

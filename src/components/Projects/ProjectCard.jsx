@@ -23,9 +23,9 @@ const ProjectCard = ({data}) => {
     return (
         <Col md={4} className={'projectCard'}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-                <Card.Body>
+                <Card.Body >
                     {data.tags && <Tags tagsData={data.tags}/>}
-                    <div onClick={openProject}>
+                    <div className="clickArea" onClick={openProject}>
                         <Card.Title as="h5">{t(data.name) || <Skeleton/>} </Card.Title>
                         <Card.Text>{(!data.shortDescription) ? "" : t(data.shortDescription) ||
                             <Skeleton count={3}/>} </Card.Text>
