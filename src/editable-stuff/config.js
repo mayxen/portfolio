@@ -147,9 +147,7 @@ const resources = {
             "vacadesc": "Puzzle game where an elastic cow has to escape for her life, this game was developed by me and the assets were developed by a friend, all the information and the download is available in the link below, I warn that it has a lot of bugs but it was a fun experience.",
             "vacadescshort": "Game develop by me for a gamejam (...)",
             //TWITCHGAME
-            "twitchgamedesc": "Fighting game made in unity to be played through my twitch channel.  Players will see from my twitch channel the person who is the boss, which is the person who is seen with life and armor. In the game players have stats to do damage, have life when they defeat the boss and become boss plus a list of weapons they can equip to improve their attack or defense capabilities when they are the boss.  In order to participate in the game participants have to post a command in the chat and will be given random stats and as they play they can improve them.\n" +
-                "\n" +
-                "Translated with www.DeepL.com/Translator (free version)",
+            "twitchgamedesc": "Fighting game made in unity to be played through my twitch channel.  Players will see from my twitch channel the person who is the boss, which is the person who is seen with life and armor. In the game players have stats to do damage, have life when they defeat the boss and become boss plus a list of weapons they can equip to improve their attack or defense capabilities when they are the boss.  In order to participate in the game participants have to post a command in the chat and will be given random stats and as they play they can improve them.",
             "twitchgamedescshort": "Game developed to play from my twitch channel, you register from the chat and you can already participate using commands",
             //HOME
             "ResumeButton": "Resume",
@@ -157,7 +155,7 @@ const resources = {
             //EXPERIENCE CARD
             "role-Zec": "FullStack programmer at Zec Telecom",
             "role-Artek": "FullStack programmer at Artek",
-            "date-Zec": "2021 – Nowadays",
+            "date-Zec": "2021 – 2022",
             "date-Artek": "2019 - 2020",
             "Experiences": "Experiences",
 
@@ -207,7 +205,7 @@ const resources = {
             //EXPERIENCE CARD
             "role-Zec": "Programador FullStack en Zec Telecom",
             "role-Artek": "Programador FullStack en Artek",
-            "date-Zec": "2021 – Actualidad",
+            "date-Zec": "2021 – 2022",
             "date-Artek": "2019 - 2020",
             "Experiences": "Experiencia laboral",
 
