@@ -130,6 +130,53 @@ const projects = {
     ]
 }
 
+const projectsWeb = {
+    show: true,
+    heading: "Projects",
+    data: [
+        {
+            id: 0,
+            name: "Twitch Game",
+            link: "",
+            description: "twitchgamedesc",
+            shortDescription: "twitchgamedescshort",
+            tags: ["GameDev", "Unity"],
+            img: [
+                require("../assets/img/twitchGame/login.png"),
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+                require("../assets/img/twitchGame/manuplayeritem.png"),
+                require("../assets/img/twitchGame/menu.png"),
+                require("../assets/img/twitchGame/menuitem.png"),
+            ],
+            shortImg: [
+                require("../assets/img/twitchGame/main.png"),
+                require("../assets/img/twitchGame/menuplayer.png"),
+            ],
+        },
+        {
+            id: 1,
+            name: "The elastivaca game",
+            link: "https://mayxen.itch.io/the-elastivaca-game",
+            description: "vacadesc",
+            shortDescription: "vacadescshort",
+            tags: ["GameDev", "Unity"],
+            img: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/panel.png"),
+                require("../assets/img/Moogame/menu.png"),
+                require("../assets/img/Moogame/game.png"),
+                require("../assets/img/Moogame/game1.png"),
+                require("../assets/img/Moogame/game2.png"),
+            ],
+            shortImg: [
+                require("../assets/img/Moogame/portada.png"),
+                require("../assets/img/Moogame/game.png"),
+            ],
+        },
+    ]
+}
+
 const tags = {
     React: '#c28585',
     Web: '#99a3ea',
@@ -161,7 +208,7 @@ const resources = {
 
             //GET IN TOUCH
             "TouchHeader": "Contact me!",
-            "TouchMessage": "I am currently working but I do not rule out offers that may involve a challenge or a change for the better. Do not hesitate to send me an email if you think I can fit in your staff.",
+            "TouchMessage": "I am currently looking for a job and I do not rule out offers that may involve a challenge or a change for the better. Do not hesitate to send me an email if you think I can fit in your staff.",
 
             //MAIN BODY
             "changeLang": "Cambiar a español",
@@ -211,7 +258,7 @@ const resources = {
 
             //GET IN TOUCH
             "TouchHeader": "Ponte en contacto conmigo!",
-            "TouchMessage": "Actualmente estoy trabajando pero no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo encajar en tu plantilla.",
+            "TouchMessage": "Actualmente estoy buscando trabajando y no descarto ofertas que puedan suponer un reto o un cambio a mejor. No dudes en enviar un email si crees que puedo encajar en tu plantilla.",
 
             //MAIN BODY
             "changeLang": "Switch to English",
@@ -235,4 +282,4 @@ const resources = {
     }
 };
 
-export {navBar, mainBody, about, skills, getInTouch, experiences, projects, resources, tags};
+export {navBar, mainBody, about, skills, getInTouch, experiences, projects, projectsWeb, resources, tags};

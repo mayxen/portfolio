@@ -9,18 +9,20 @@ const pictureLinkRegex = new RegExp(
 );
 
 const AboutMe = ({heading, message, link, imgSize, resume}) => {
+
+    const myselfImage = require("../../assets/img/myself.jpg");
     const [profilePicUrl, setProfilePicUrl] = React.useState("");
     const [showPic, setShowPic] = React.useState(Boolean(link));
     const { t } = useTranslation();
 
-    // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
+    // seems like this doesnt work anymore need to check why
     React.useEffect(() => {
         const handleRequest = async () => {
             const instaLink = "https://www.instagram.com/";
             const instaQuery = "/?__a=1";
             try {
                 const response = await axios.get(instaLink + link + instaQuery);
-                setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
+                // setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
             } catch (error) {
                 setShowPic(false);
                 console.error(error.message);
@@ -32,7 +34,7 @@ const AboutMe = ({heading, message, link, imgSize, resume}) => {
         } else {
             setProfilePicUrl(link);
         }
-    }, [link]);
+    }, []);
 
 
     return (
@@ -42,8 +44,8 @@ const AboutMe = ({heading, message, link, imgSize, resume}) => {
                     {showPic && (
                         <img
                             className="border border-secondary rounded-circle"
-                            src={profilePicUrl}
-                            alt="profilepicture"
+                            src={myselfImage}
+                            alt="profile picture"
                             width={imgSize}
                             height={imgSize}
                         />
