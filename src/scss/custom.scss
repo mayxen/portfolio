@@ -11,14 +11,15 @@
   margin: 5px;
 }
 
+.clickArea {
+  cursor: pointer;
+}
+
 .projectsCard {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
-  .clickArea {
-    cursor: pointer;
-  }
 
   .card-title {
     text-align: center;
