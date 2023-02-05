@@ -1,8 +1,10 @@
 import React from "react";
-import {projectsWeb} from "../../editable-stuff/config";
+import {getInTouch, projectsWeb} from "../../editable-stuff/config";
 import ProjectCard from "./ProjectCard";
 import Navbar2 from "../Navbar2";
 import {useTranslation} from 'react-i18next';
+import GetInTouch from "../home/GetInTouch";
+import Footer from "../Footer";
 
 const ProjectsWeb = React.forwardRef(
     ({gradient, title, message, icons}, ref) => {
@@ -16,10 +18,19 @@ const ProjectsWeb = React.forwardRef(
                 <div className="projectsCard">
                     {
                         projectsWeb.data.map((data, index) => {
-                            return <ProjectCard key={index} data={data}/>
+                            return <ProjectCard key={index} data={data} isWeb={"true"}/>
                         })
                     }
                 </div>
+                <Footer>
+                    {getInTouch.show && (
+                        <GetInTouch
+                            heading={getInTouch.heading}
+                            message={getInTouch.message}
+                            email={getInTouch.email}
+                        />
+                    )}
+                </Footer>
             </>
         );
     }

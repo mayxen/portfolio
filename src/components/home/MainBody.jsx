@@ -49,6 +49,10 @@ const MainBody = React.forwardRef(({gradient, title, message, icons}, ref) => {
                   aria-label="View recent projects">
                 {t('View recent projects')}
             </Link>
+            <Link className="btn btn-outline-light btn-lg buttonMargin" to={"/projectsWeb"}
+                  aria-label="View recent projects">
+                {t('View recent projects web')}
+            </Link>
             <div className="btn btn-outline-light btn-lg buttonMargin" onClick={changeLang}
                   aria-label="change language">
                 {t('changeLang')}

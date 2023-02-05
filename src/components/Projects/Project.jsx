@@ -1,5 +1,5 @@
 import React, {useCallback, useState} from "react";
-import {projects} from "../../editable-stuff/config";
+import {getInTouch, projects, projectsWeb} from "../../editable-stuff/config";
 import {useTranslation} from 'react-i18next';
 import qs from "stringquery";
 import Tags from "./Tags";
@@ -7,7 +7,10 @@ import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import Slider from "react-slick";
 import Navbar2 from "../Navbar2";
-import ImageViewerPanel from "../home/ImageViewerPanel";
+import ImageViewerPanel from "./ImageViewerPanel";
+import { GoMarkGithub, GoBrowser } from "react-icons/go";
+import GetInTouch from "../home/GetInTouch";
+import Footer from "../Footer";
 
 
 const project = React.forwardRef((props, ref) => {
@@ -24,8 +27,17 @@ const project = React.forwardRef((props, ref) => {
     const search = window.location.hash.split("?")[1];
     const urlData = qs("?" + search);
 
-    // eslint-disable-next-line
-    const data = projects.data.find(i => i.id == urlData.id);
+    console.log(urlData)
+
+
+    let data;
+    if (Boolean(urlData.isWeb)) {
+        // eslint-disable-next-line
+        data = projectsWeb.data.find(i => i.id == urlData.id);
+    } else {
+        // eslint-disable-next-line
+        data = projects.data.find(i => i.id == urlData.id);
+    }
 
     //big Image
     const [currentImage, setCurrentImage] = useState(0);
@@ -54,21 +66,37 @@ const project = React.forwardRef((props, ref) => {
                                 ))}
                             </Slider>
                             <div className="m-3">
-                                <Card.Text>{(!data.description) ? "" : t(data.description) ||
-                                    <Skeleton count={3}/>} </Card.Text>
-                            </div>
-                            {(data.link) &&
-                                <div className="m-3">
-                                    <a target={"_blank"} href={t(data.link)}>Elastivaca Game!</a>
+                                <div id="contain" className="letter">
+                                    <p className="inkTitle">{t(data.name) || <Skeleton/>}</p>
+                                    <p id="labarum"></p>
+                                    <p>{(!data.description) ? "" : t(data.description) ||
+                                        <Skeleton count={3}/>}</p>
+
                                 </div>
-                            }
+                            </div>
+                            <div className="m-3 floatingButtons">
+                                {(data.linkGithub) &&
+                                    <a  rel="noreferrer"  target={"_blank"} href={t(data.linkGithub)}><GoMarkGithub /> Github repository</a>
+                                }
+                                {(data.link) &&
+                                    <a  rel="noreferrer"  target={"_blank"} href={t(data.link)}><GoBrowser /> web link</a>
+                                }
+                            </div>
                         </div>
                         <ImageViewerPanel images={data.img} currentImage={currentImage} isViewerOpen={isViewerOpen}
                                           setCurrentImage={setCurrentImage} setIsViewerOpen={setIsViewerOpen}/>
+                        <Footer>
+                            {getInTouch.show && (
+                                <GetInTouch
+                                    heading={getInTouch.heading}
+                                    message={getInTouch.message}
+                                    email={getInTouch.email}
+                                />
+                            )}
+                        </Footer>
                     </>
                 )
             }
-
         </>);
 });
 

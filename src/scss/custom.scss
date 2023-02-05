@@ -59,11 +59,26 @@
   }
 }
 
+.switchColors {
+  .nav-item {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #6b6a6a !important;
+
+    &:hover {
+      text-decoration: underline;
+      color: #000000 !important;
+    }
+  }
+}
+
 .nav-item {
+  text-decoration: none;
+  margin-left: 10px;
   color: #fff !important;
 
   &:hover {
-    color: #e8e8e8 !important;
+    color: #6b6a6a !important;
   }
 }
 
@@ -85,3 +100,136 @@
   background-color: rgba(31, 101, 206, 0.81);
 }
 
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .skill {
+    margin: 10px;
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+
+    .skillHidden {
+      background-color: #0d6efd;
+      border-radius: 5px;
+      padding: 10px;
+      position: absolute;
+      display: none;
+      width: 220px;
+
+      img {
+        border-radius: 5px;
+        background-color: white;
+        width: 200px;
+        margin: auto 0px;
+        opacity: 100 !important;
+      }
+
+
+
+      svg, h6 {
+        color: white;
+      }
+    }
+
+    &:hover {
+
+      .skillHidden {
+        display: block;
+      }
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.list {
+  list-style-type: none;
+}
+
+.leadBig {
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Bilbo+Swash+Caps&display=swap');
+
+@font-face {
+  font-family: Morris;
+  src: url(https://cdn.statically.io/gh/EmmesCodes/Tipografias/dae9f5bb/MorrisInitials.ttf);
+}
+
+.letter {
+
+  p {
+    color: #7F3300;
+
+    &:not(:first-child)::first-letter {
+      float: left;
+      font: 2em/1em Morris;
+      text-shadow: 1px 1px 1px rgba(127, 51, 0, 0.45);
+      margin: 0 .5rem;
+      color: rgba(127, 51, 0, 0.45) !important;
+    }
+  }
+
+  .inkTitle {
+    font-size: 3em;
+    font-family: Pirata One, sans-serif !important;
+    text-align: center;
+    line-height: 3em;
+    color: black;
+    opacity: 0.6;
+  }
+}
+
+#contain {
+  @media only screen and (max-width: 630px) {
+    width: 100%;
+    padding: 0;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  padding: 4em;
+}
+
+.floatingButtons {
+  @media only screen and (max-width: 630px) {
+    position: initial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+  a {
+    @media only screen and (max-width: 630px) {
+      width: 100%;
+      height: 60px;
+      margin: 10px 0px;
+    }
+
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    text-decoration: none;
+    margin: 5px;
+  }
+}

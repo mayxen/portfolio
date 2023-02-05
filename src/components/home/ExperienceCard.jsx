@@ -9,11 +9,14 @@ const ExperienceCard = ({data}) => {
     return (
         <Col lg="6">
             <div className="pb-5 text-center">
-                <p className="lead">
-                    {t(data.role)}
-                    <br/>
-                    {t(data.date)}
+                <p className="leadBig">
+                    {t(data.role)} ({t(data.date)})
                 </p>
+                <ul className="list">
+                    {data.roles.map((data, i) =>
+                        <li key={i}>{t(data)}</li>
+                    )}
+                </ul>
             </div>
         </Col>
     );

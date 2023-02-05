@@ -6,7 +6,7 @@ import {useTranslation} from 'react-i18next';
 import Slider from "react-slick";
 import Tags from "./Tags";
 
-const ProjectCard = ({data}) => {
+const ProjectCard = ({data, isWeb = ""}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -17,13 +17,13 @@ const ProjectCard = ({data}) => {
     const {t} = useTranslation();
 
     function openProject() {
-        document.location = "/#/project/data?id=" + data.id;
+        document.location = "/#/project/data?id=" + data.id + "&isWeb=" + isWeb;
     }
 
     return (
         <Col md={4} className={'projectCard'}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-                <Card.Body >
+                <Card.Body>
                     {data.tags && <Tags tagsData={data.tags}/>}
                     <div className="clickArea" onClick={openProject}>
                         <Card.Title as="h5">{t(data.name) || <Skeleton/>} </Card.Title>
@@ -33,7 +33,7 @@ const ProjectCard = ({data}) => {
                     <Slider {...settings}>
                         {data.shortImg.map((data, index) => (
                             <div key={index}>
-                                <img src={data} alt={data} onClick={openProject}/>
+                                <img className="clickArea" src={data} alt={data} onClick={openProject}/>
                             </div>
                         ))}
                     </Slider>

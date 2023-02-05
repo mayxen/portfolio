@@ -1,8 +1,10 @@
 import React from "react";
-import {projects} from "../../editable-stuff/config";
+import {getInTouch, projects} from "../../editable-stuff/config";
 import ProjectCard from "./ProjectCard";
 import Navbar2 from "../Navbar2";
 import {useTranslation} from 'react-i18next';
+import GetInTouch from "../home/GetInTouch";
+import Footer from "../Footer";
 
 const Projects = React.forwardRef(
     ({gradient, title, message, icons}, ref) => {
@@ -20,6 +22,15 @@ const Projects = React.forwardRef(
                         })
                     }
                 </div>
+                <Footer>
+                    {getInTouch.show && (
+                        <GetInTouch
+                            heading={getInTouch.heading}
+                            message={getInTouch.message}
+                            email={getInTouch.email}
+                        />
+                    )}
+                </Footer>
             </>
         );
     }

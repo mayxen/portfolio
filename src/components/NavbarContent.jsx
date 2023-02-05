@@ -16,9 +16,14 @@ const NavigationContent = ((props) => {
             </Navbar.Brand>
             <Nav className="navbar-nav mr-auto">
                 {
-                    <Link className="nav-item lead" to={"/projects"}>
-                        {t('Projects')}
-                    </Link>
+                    <>
+                        <Link className="nav-item lead" to={"/projects"}>
+                            {t('Projects')}
+                        </Link>
+                        <Link className="nav-item lead" to={"/projectsWeb"}>
+                            {t('Web projects')}
+                        </Link>
+                    </>
                 }
             </Nav>
             {props.children}
