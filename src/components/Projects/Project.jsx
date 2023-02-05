@@ -61,7 +61,7 @@ const project = React.forwardRef((props, ref) => {
                             <Slider {...sliderSettings}>
                                 {data.img.map((data, index) => (
                                     <div key={index}>
-                                        <img onClick={() => openImageViewer(index)} src={data} alt={data}/>
+                                        <img className="clickArea" onClick={() => openImageViewer(index)} src={data} alt={data}/>
                                     </div>
                                 ))}
                             </Slider>
